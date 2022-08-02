@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock & EDM Festival</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <!--ENCABEZADO-->
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>Rock & EDM Festival</h1>
+            <nav class="navegacion-principal">
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galería</a>
+                <a href="#boletos">Boleto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--VIDEO PRESENTACION-->
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>
+                    Rock & EDM Festival 
+                    <span>Julio 2021, La Pampa, Argentina</span>
+                </h2>
+            </div>
+        </div>
+
+        <video controls autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+    </div>
+
+    <!--SECTION RESUMEN-->
+    <section class="sect contenedor">
+        <div class="sect-imagen">
+            <img src="src/img/imagen_vocalista.jpg" alt="Imagen vocalista">
+        </div>
+        <div class="sect-contenido">
+            <h2 class="sect-pri">Rock & EDM Festival</h2>
+            <p class="sect-sec">Julio 2021, La Pampa, Argentina</p>
+            <p class="sect-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Ab molestias laboriosam dolorum illum exercitationem nulla beatae, 
+            enim vel id sed minus quaerat obcaecati aut eius tenetur voluptas.</p>
+        </div>
+    </section>
+
+    <!--LINEUP-->
+    <section id="lineup" class="linenup">
+        <h3>Line Up</h3>
+        <p class="dia">Viernes 21</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Metalica</span></li>
+                    <li>22:00 | <span>Metalica</span></li>
+                    <li>20:00 | <span>Metalica</span></li>
+                    <li>18:00 | <span>Metalica</span></li>
+                    <li>16:00 | <span>Metalica</span></li>
+                    <li>14:00 | <span>Metalica</span></li>
+                </ul>
+            </div>
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario EDM</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Deadmau5</span></li>
+                    <li>22:00 | <span>Deadmau5</span></li>
+                    <li>20:00 | <span>Deadmau5</span></li>
+                    <li>18:00 | <span>Deadmau5</span></li>
+                    <li>16:00 | <span>Deadmau5</span></li>
+                    <li>14:00 | <span>Deadmau5</span></li>
+                </ul>
+            </div>
+        </div>
+        <p class="dia">Sabado 22</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Metalica</span></li>
+                    <li>22:00 | <span>Metalica</span></li>
+                    <li>20:00 | <span>Metalica</span></li>
+                    <li>18:00 | <span>Metalica</span></li>
+                    <li>16:00 | <span>Metalica</span></li>
+                    <li>14:00 | <span>Metalica</span></li>
+                </ul>
+            </div>
+            <div class="escenario edm bg-amarillo">
+                <p class="nombre-escenario">Escenario EDM</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Deadmau5</span></li>
+                    <li>22:00 | <span>Deadmau5</span></li>
+                    <li>20:00 | <span>Deadmau5</span></li>
+                    <li>18:00 | <span>Deadmau5</span></li>
+                    <li>16:00 | <span>Deadmau5</span></li>
+                    <li>14:00 | <span>Deadmau5</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--GALERIA-->
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galería</h3>
+        <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <script src="build/js/bundle.min.js"></script>
+
+    <!--BOLETOS-->
+    <section id="boletos" class="boletos">
+        <h3>Boletos</h3>
+        <div class="contenedor boleto-marco">
+            <div class="boleto-ind">
+                <p class="dia">Pase 1 Día</p>
+                <ul class="boleto-contenido">
+                    <p class="incluye">Incluye</p>
+                    <li>Acceso a ambos escenarios</li>
+                    <li>Comida y Bebida</li>
+                    <p class="precio">$100</p>
+                </ul>
+            </div>
+            <div class="boleto-ind">
+                <p class="dia">Pase 2 Día</p>
+                <ul class="boleto-contenido">
+                    <p class="incluye">Incluye</p>
+                    <li>Acceso a ambos escenarios</li>
+                    <li>Comida y Bebida</li>
+                    <li>Camisa del Evento</li>
+                    <li>Acceso VIP</li>
+                    <p class="precio">$180</p>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer">
+            <p>Rock & EDM Festival | Todos los derechos son Reservados</p>
+    </footer>
+</body>
+</html>

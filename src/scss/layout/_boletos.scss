@@ -1,0 +1,51 @@
+.boletos {
+    background-color: $verde;
+    padding: $separacion 0;
+    h3 {
+        text-align: center;
+        font-weight: $bold;
+        color: $blanco;
+    }
+}
+.boleto-marco {
+    margin-top: $separacion;
+    @include tablet {
+        @include grid(2, $separacion/2);
+    }
+}
+.boleto-ind {
+    .dia {
+        margin: 0;
+        color: $blanco;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .boleto-contenido li:nth-child(odd){
+        background-color: darken($blanco, 3);
+    }
+}
+.boleto-contenido {
+    list-style: none;
+    padding: 0;
+    background-color: $blanco;
+    .incluye{
+        background-color: $rosa;
+        text-transform: uppercase;
+        font-weight: $delgada;
+        color: $blanco;
+        padding: 2.5rem;
+        margin: 0;
+        text-align: center;
+    }
+    .precio{
+        background-color: purple;
+        color: $blanco;
+        padding: 2.5rem;
+        margin: 0;
+        text-align: center;
+    }
+    li {
+        padding: 2.5rem;
+    }
+
+}

@@ -1,0 +1,28 @@
+.sect{
+    padding: $separacion;
+    @include tablet {
+        @include grid(2, $separacion){
+        }
+    }
+}
+.sect-contenido {
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sect-pri{
+        padding-bottom: $separacion;
+        font-size: 3rem;
+        font-weight: $black;
+    }
+    .sect-sec{
+        font-weight: $bold;
+        font-size: 2rem;
+        color: $rosa;
+    }
+    .sect-p{
+        line-height: 1.5;
+        font-size: 2rem;
+    }
+}
